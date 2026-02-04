@@ -13,7 +13,7 @@ const data = [
   },
   {
     id: 2,
-    title: "Mahir Menggunakan Text Editor",
+    title: "Mahir Menggunakan Text Editor (VSCODE)",
     issuer: "CODEPOLITAN",
     date: "2026",
     img: "assets/images/certificate/text-editor.png",
