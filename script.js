@@ -5,7 +5,7 @@ const data = [
     title: "Belajar HTML Dasar",
     issuer: "CODEPOLITAN",
     date: "2026",
-    img: "/assets/images/certificate/html.png",
+    img: "assets/images/certificate/html.png",
     desc_id:
       "Berhasil memahami struktur dasar HTML dan mampu membuat halaman web statis sederhana.",
     desc_en:
@@ -16,7 +16,7 @@ const data = [
     title: "Mahir Menggunakan Text Editor",
     issuer: "CODEPOLITAN",
     date: "2026",
-    img: "/assets/images/certificate/text-editor.png",
+    img: "assets/images/certificate/text-editor.png",
     desc_id:
       "Mampu menggunakan Visual Studio Code secara optimal untuk menulis, mengelola, dan debugging kode.",
     desc_en:
@@ -27,7 +27,7 @@ const data = [
     title: "GIT Pemula",
     issuer: "CODEPOLITAN",
     date: "2026",
-    img: "/assets/images/certificate/git-basic.png",
+    img: "assets/images/certificate/git-basic.png",
     desc_id:
       "Mampu menggunakan Git untuk melacak perubahan kode dan berkolaborasi dalam proyek menggunakan GitHub.",
     desc_en:
