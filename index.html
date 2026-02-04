@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fadillah Rohman's achievements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="top-nav">
+        <div class="brand">Achievement 🎖️</div>
+        <button class="btn-lang" onclick="toggleLang()">English / ID</button>
+      </nav>
+      <section class="hero-box">
+        <div class="status-badge">Student @ Polindra</div>
+        <h1 id="title">FADILLAH ROHMAN</h1>
+        <p class="subtitle" id="subtitle">
+          Software Engineer, lagi eksplor Android Development & belajar hal baru
+          tiap hari. 😉
+        </p>
+
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Cari sertifikat..." />
+        </div>
+      </section>
+
+      <div class="grid" id="cert-grid"></div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img
+          id="m-img"
+          src=""
+          style="width: 100%; border-bottom: 2px solid black"
+        />
+        <div class="modal-body">
+          <h2 id="m-title">Title</h2>
+          <p
+            id="m-meta"
+            style="font-weight: 700; color: #0295c3; margin: 0.5rem 0 1rem 0"
+          ></p>
+          <p id="m-desc">Description</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

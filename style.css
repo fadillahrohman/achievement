@@ -1,0 +1,227 @@
+:root {
+  --bg-blue: #ffffff;
+  --primary: #1da8cd;
+  --second: #0295c3;
+  --white: #ffffff;
+  --black: #000000;
+  --gray-border: #e2e8f0;
+  --transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--bg-blue);
+  color: var(--black);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* --- CONTAINER --- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* --- HEADER & TOP NAV --- */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.btn-lang {
+  background: var(--primary);
+  border: 2px solid var(--black);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px var(--black);
+}
+
+.btn-lang:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px var(--black);
+}
+
+/* --- HERO BOX (Ref: White box in image) --- */
+.hero-box {
+  background: var(--white);
+  border-radius: 40px;
+  padding: 3rem;
+  max-width: 600px;
+  border: 2px solid var(--black);
+  box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.hero-box::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+  border-radius: 40px;
+  z-index: -1;
+  border: 2px solid var(--black);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.status-badge {
+  background: var(--black);
+  color: var(--white);
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+/* --- SEARCH --- */
+.search-container {
+  margin-bottom: 3rem;
+}
+input#search {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  border: 2px solid var(--black);
+  font-family: inherit;
+  font-weight: 600;
+  box-shadow: 6px 6px 0px var(--black);
+  outline: none;
+}
+
+/* --- GRID CARDS --- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.card {
+  background: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: var(--transition);
+  box-shadow: 8px 8px 0px var(--black);
+}
+
+.card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px var(--black);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 2px solid var(--black);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+.card-title {
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.card-meta {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--bg-blue);
+  margin-bottom: 1rem;
+}
+
+.btn-detail {
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--primary);
+  border: 2px solid var(--black);
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-detail:hover {
+  background: var(--second);
+}
+
+/* --- MODAL --- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0296c354;
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: white;
+  border: 3px solid var(--black);
+  width: 90%;
+  max-width: 600px;
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 20px 20px 0px var(--black);
+}
+.modal-body {
+  padding: 2rem;
+}
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .hero-box {
+    padding: 1.5rem;
+  }
+}
