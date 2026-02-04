@@ -2,7 +2,7 @@ let currentLang = "id";
 const data = [
   {
     id: 1,
-    title: "Belajar HTML Dasar",
+    title: "Belajar Dasar HTML",
     issuer: "CODEPOLITAN",
     date: "2026",
     img: "assets/images/certificate/html.png",
@@ -13,7 +13,7 @@ const data = [
   },
   {
     id: 2,
-    title: "Mahir Menggunakan Text Editor",
+    title: "Mahir Menggunakan Text Editor (VSCODE)",
     issuer: "CODEPOLITAN",
     date: "2026",
     img: "assets/images/certificate/text-editor.png",
@@ -32,6 +32,18 @@ const data = [
       "Mampu menggunakan Git untuk melacak perubahan kode dan berkolaborasi dalam proyek menggunakan GitHub.",
     desc_en:
       "Able to use Git to track code changes and collaborate on projects using GitHub.",
+  },
+
+  {
+    id: 4,
+    title: "Pemrograman Javascript untuk Pemula sampai Mahir",
+    issuer: "Programmer Zaman Now",
+    date: "2026",
+    img: "assets/images/certificate/javascript-basic.png",
+    desc_id:
+      "Berhasil menguasai dasar hingga lanjutan JavaScript, termasuk logika pemrograman, fungsi, dan pengelolaan data.",
+    desc_en:
+      "Successfully mastered JavaScript from basic to advanced concepts, including programming logic, functions, and data handling.",
   },
 ];
 
